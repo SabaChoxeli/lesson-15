@@ -1,0 +1,71 @@
+/*
+1. გამოიყენეთ const currentDay = new Date().getDay(); ცვლადი;
+currentDay ცვლადი გვაძლევს კვირის დღეს რიცხვითი სახით 0 - არის კვირა,
+ 1 - არის ორშაბათი და ასე შემდეგ.( 0 - 6 ამდე რიცხვს აბრუნებს სადაც 6 არის შაბათი) , 
+ დავწეროთ switch სადაც შევამოწმებთ currentDay-ს და 0 ის შემთხვევაში console.log ში 
+ გამოვიტანთ სიტყვას - კვირა, 1 ის შემთხვევაში - ორშაბათს და ასე შემდეგ 6 - შაბათი.
+*/
+
+// 1.
+const currentDay = new Date().getDay();
+
+// switch (currentDay) {
+//   case 0:
+//     console.log("Sunday");
+//     break;
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   case 4:
+//     console.log("Thursday");
+//     break;
+//   case 5:
+//     console.log("Friday");
+//     break;
+//   case 6:
+//     console.log("Saturday");
+//     break;
+// }
+
+//2. დაწერეთ for ციკლი, 0 დან 100 - მდე console.log ში დაბეჭდეთ ინდექსი i
+
+//2.
+// for (let i = 0; i < 100; i++) {
+//   console.log(i);
+// }
+
+//3. დაწერეთ while ციკლი 0 დან 50 - მდე console.log ში დაბეჭდეთ ინდექსი i
+//3.
+
+// let i = 0;
+// while (i < 49) {
+//   i++;
+//   console.log(i);
+// }
+
+// 4. დაწერეთ do while ციკლი 0 დან 150 - მდე console.log ში დაბეჭდეთ ინდექსი i
+// 4.
+// let i = 0;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i < 150);
+
+/*
+5. შექმენით ცვლადი და მიანიჭეთ ცარიელი მასივი,
+შემდეგ დაწერეთ Loop( for ან while ან do while ) 1 დან 1000 - მდე
+ამ მასივში ჩაწერეთ ინდექსი გამრავლებული ინდექსზე(i * i); გამოიყენეთ  push მეთოდი
+ */
+
+// 5.
+let array = [];
+for (let i = 0; i < 1000; i++) {
+  array.push(i * i);
+  console.log(array);
+}
